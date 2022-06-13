@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function City({ waterfront, castle }) {
+export default function City({ waterfront, castle, skyline }) {
   console.log(waterfront);
   return (
     <div className="city">
@@ -8,7 +8,7 @@ export default function City({ waterfront, castle }) {
       {/* use these 3 ids in img tags load approriate images that live in the public directory */}
       <section>
         <img src={`/${waterfront}.jpeg`} />
-        {/* <img src={`${skyline}.jpeg`} /> */}
+        <img src={`${skyline}.jpeg`} />
         <img src={`${castle}.jpeg`} />
       </section>
     </div>

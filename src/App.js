@@ -15,13 +15,15 @@ function App() {
   // finally, you'll need an array of slogans, which could start out as ['The City of Excellence'] for example
   const [waterFront, setWaterfront] = useState('waterfront-1') ;
   const [castle, setCastle] = useState('castle-1');
+  const [skyline, setSkyline] = useState('skyline-1');
 
   return (
     <div className="App">
       {/* here, the City component takes in skylineId, waterfrontId, castleId as props. It'll use those ids to render pictures correctly. */}
       <City 
         waterfront={waterFront}
-        castle={castle}/>
+        castle={castle}
+        skyline={skyline}/>
       <h1>
         {/* dynamically update the city name here using state */}
         Welcome to beautiful Portland!
@@ -36,6 +38,7 @@ function App() {
           */}
           <WaterfrontDropdown setWaterfront={setWaterfront} />
           <CastleDropdown setCastle={setCastle}/>
+          <SkylineDropdown setSkyline={setSkyline} />
         </section>
         {/* here, the SloganForm component takes in the setSlogans state handler function and the slogans array that live in state */}
         {/* here, the SloganList component takes the array of slogans that lives in state */}
