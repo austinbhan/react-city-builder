@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       {/* here, the City component takes in skylineId, waterfrontId, castleId as props. It'll use those ids to render pictures correctly. */}
       <City 
-        waterFront={waterFront}/>
+        waterfront={waterFront}/>
       <h1>
         {/* dynamically update the city name here using state */}
         Welcome to beautiful Portland!
