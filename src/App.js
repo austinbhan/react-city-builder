@@ -16,6 +16,7 @@ function App() {
   const [waterFront, setWaterfront] = useState('waterfront-1') ;
   const [castle, setCastle] = useState('castle-1');
   const [skyline, setSkyline] = useState('skyline-1');
+  const [cityName, setCityName] = useState('');
 
   return (
     <div className="App">
