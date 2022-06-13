@@ -16,7 +16,7 @@ function App() {
   const [waterFront, setWaterfront] = useState('waterfront-1') ;
   const [castle, setCastle] = useState('castle-1');
   const [skyline, setSkyline] = useState('skyline-1');
-  const [cityName, setCityName] = useState('');
+  // const [cityName, setCityName] = useState('');
 
   return (
     <div className="App">
@@ -24,13 +24,17 @@ function App() {
       <City 
         waterfront={waterFront}
         castle={castle}
-        skyline={skyline}/>
+        skyline={skyline}
+        // cityName={cityName}
+      />
+        
       <h1>
         {/* dynamically update the city name here using state */}
         Welcome to beautiful Portland!
       </h1>
       <div className='bottom'>
         {/* here, the CityNameInput component takes in the setCityName state handler function */}
+        {/* <CityNameInput setCityName={setCityName}/> */}
         <section className='dropdowns'>
           {/* 
           render all three Dropdown components (WaterfrontDropdown, SkylineDropdown, CastleDropdown) here. 
