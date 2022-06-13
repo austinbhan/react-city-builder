@@ -1,11 +1,11 @@
-export default function SloganForm({ slogan, setSlogan, setSloganForm, SloganForm }) {
+export default function SloganForm({ slogans, setSlogans, setSloganForm, SloganForm }) {
   // React forms are a pain! 
   // Track the sloganInput form state with a useState hook
 
 
   function handleSubmit(e) {
     e.preventDefault();
-    setSlogan([...slogan, SloganForm]);
+    setSlogans([...slogans, SloganForm]);
     // This component takes in a prop called setSlogans, which is a function that takes in an array of slogans. 
     // Also, this component also takes in a prop called slogans, which is an arry of strings. //// On submit call the setSlogans state with a new array that is a copy of the old array with the new slogan immutably added to the end 
     setSloganForm('');

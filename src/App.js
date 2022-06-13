@@ -16,7 +16,7 @@ function App() {
   const [waterFront, setWaterfront] = useState('waterfront-1') ;
   const [castle, setCastle] = useState('castle-1');
   const [skyline, setSkyline] = useState('skyline-1');
-  const [slogan, setSlogan] = useState([]);
+  const [slogans, setSlogans] = useState([]);
   const [sloganForm, setSloganForm] = useState('');
   // const [cityName, setCityName] = useState('');
 
@@ -48,7 +48,8 @@ function App() {
           <SkylineDropdown setSkyline={setSkyline} />
         </section>
         {/* here, the SloganForm component takes in the setSlogans state handler function and the slogans array that live in state */}
-        <SloganForm slogan={slogan} setSlogan={setSlogan} setSloganForm={setSloganForm} sloganForm={sloganForm}/>
+        <SloganForm slogans={slogans} setSlogans={setSlogans} setSloganForm={setSloganForm} sloganForm={sloganForm}/>
+        <SloganList slogans={slogans}/>
         {/* here, the SloganList component takes the array of slogans that lives in state */}
 
       </div>
