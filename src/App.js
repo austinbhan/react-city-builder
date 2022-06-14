@@ -17,9 +17,9 @@ function App() {
   const [castle, setCastle] = useState('castle-1');
   const [skyline, setSkyline] = useState('skyline-1');
   const [slogans, setSlogans] = useState([]);
+  const [cityName, setCityName] = useState('');
 
-  // const [cityName, setCityName] = useState('');
-  console.log(slogans);
+
   return (
     <div className="App">
       {/* here, the City component takes in skylineId, waterfrontId, castleId as props. It'll use those ids to render pictures correctly. */}
@@ -32,11 +32,11 @@ function App() {
         
       <h1>
         {/* dynamically update the city name here using state */}
-        Welcome to beautiful Portland!
+        Welcome to beautiful { cityName }!
       </h1>
       <div className='bottom'>
         {/* here, the CityNameInput component takes in the setCityName state handler function */}
-        {/* <CityNameInput setCityName={setCityName}/> */}
+        <CityNameInput setCityName={setCityName}/>
         <section className='dropdowns'>
           {/* 
           render all three Dropdown components (WaterfrontDropdown, SkylineDropdown, CastleDropdown) here. 
