@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function City({ waterfront, castle, skyline }) {
-  console.log(waterfront);
   return (
     <div className="city">
       {/* this component should take 3 props: waterfrontId, skylineId, and castlId */}

@@ -2,7 +2,6 @@ import React from 'react';
 import Slogan from './Slogan.js';
 
 export default function SloganList({ slogans }) {
-  console.log(slogans);
   return (
     <section>
       <h2>Your slogans:</h2>
